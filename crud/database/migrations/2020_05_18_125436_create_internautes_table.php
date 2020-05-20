@@ -13,16 +13,16 @@ class CreateInternautesTable extends Migration
      */
     public function up()
     {
-        Schema::create('internautes', function (Blueprint $table) {
-            $table->id();
+        // Schema::create('internautes', function (Blueprint $table) {
+        //     $table->id();
             
-            $table->string('name');
-            $table->string('firstname');
-            $table->integer('age');
-            $table->string('email');
+        //     $table->string('name');
+        //     $table->string('firstname');
+        //     $table->integer('age');
+        //     $table->string('email');
             
-            $table->timestamps();
-        });
+        //     $table->timestamps();
+        // });
     }
 
     /**
@@ -32,6 +32,6 @@ class CreateInternautesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('internautes');
+        // Schema::dropIfExists('internautes');
     }
 }
