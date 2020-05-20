@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('chart','UserController@index');
+Route::get('chart','UserController@index')->name('chart');
 
 Route::get('about',function(){
     return view('about');

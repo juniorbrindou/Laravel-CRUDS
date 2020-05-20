@@ -44,6 +44,13 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('chart') }}">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Graphe</font>
+                                    </font>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('internaute.create') }}">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">Ajout</font>
@@ -102,9 +109,7 @@
            
         </footer>
         <!-- cripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-            {!! $chart->script() !!}
-            {!! $chart2->script() !!}
+        
         <script src="{{asset('js/jquery.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
         <script src="{{asset('js/myScript.js')}}"></script>

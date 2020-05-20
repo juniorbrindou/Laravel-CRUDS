@@ -16,16 +16,18 @@ class UserController extends Controller
      */
     public function index()
     {
-        $intField = Internaute::pluck('firstname','age');
+        $intField = Internaute::orderBy('age','desc')->pluck('firstname','age');
         $chart2 = new UserChart;
         $chart2->labels($intField->values());
-        $chart2->dataset('Graphe Internaute-Age', 'bar', $intField->keys());
-
+        $chart2->title('Internautes');
+        $chart2->dataset('Graphe Internaute-Age', 'bar', $intField->keys())
+        ->backgroundColor('#03a9f4c4')->color('#212529')->fill(false)->lineTension(0.4)->dashed([10,10]);
         
         $fields = User::orderBy('age','desc')->pluck('age','name');
         $chart = new UserChart;
-        $chart->labels($fields->keys());
-        $chart->dataset('Graphe Utilisateur-Age', 'bar', $fields->values());
+        $chart->labels($fields->keys())->title('Utilisateur');
+        $chart->dataset('Graphe Utilisateur-Age', 'bar', $fields->values())
+        ->backgroundColor('#fa4682');
         
         return view('chart',compact('users','chart2','chart'));
     }
