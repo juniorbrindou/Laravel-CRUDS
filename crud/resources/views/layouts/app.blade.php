@@ -12,8 +12,9 @@
 
     </head>
     <body>
+
         <!-- menu principal -->
-            <div class="container-fluid mb-5">
+            <div class="container-fluid mb-5 mt-2">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
                     <a class="navbar-brand" href="#">
                         <img src="{{asset('img/logo.png')}}" class="img-fluid" alt="image logo" style="width:50px; height:50px">
@@ -85,6 +86,8 @@
             @yield('content')
 
         </div>
+
+
         <footer class="container-fluid bg-primary mt-5">
             <div class="row p-5">
                 <div class="col-6 text-white">
@@ -111,6 +114,7 @@
         <!-- cripts -->
         
         <script src="{{asset('js/jquery.js')}}"></script>
+        <script src="{{asset('js/popper.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
         <script src="{{asset('js/myScript.js')}}"></script>
     </body>

@@ -6,8 +6,9 @@
             <h1 class="text-primary">Liste des Internautes</h1>
         </div>
         <div class="col-2 offset-2">
-            <a href="{{ route('internaute.create') }}" class="btn btn-primary">Creer Nouveau</a>
+            <a href="{{ route('internaute.create') }}" data-toggle="tooltip" title="test tooltip" class="btn btn-primary">Creer Nouveau</a>
         </div>
+  
     </div>
 
     <div class="row">
