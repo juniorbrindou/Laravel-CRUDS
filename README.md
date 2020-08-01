@@ -12,7 +12,7 @@ I expect after downloading, you will improve it and make public your product as 
 
 ## For The beginners like Me
 
-yes! i am too a beginner as in inglish as in Laravel developpment (:
+yes! i am as a beginner as in inglish as in Laravel developpment (:
 
 1. Download this repository with _**`git clone`**_ https://github.com/225junior/Laravel-CRUDS.
 2. Execute : _**`composer install`**_ to install all the package in composer.json file
