@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col-8 offset-2">
-          
+         
 <form action="{{ route('internaute.update',$internaute->id) }}" method="POST">
     @csrf
     @method('PUT')
