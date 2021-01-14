@@ -14,8 +14,11 @@ class InternauteController extends Controller
      */
     public function index()
     {
-        $internautes = Internaute::paginate(5); 
-        return view('liste',compact('internautes'));
+        // avant
+        // $internautes = Internaute::paginate(5);
+        // return view('liste',compact('internautes'));
+        // api
+        return collection(Internaute::all());
     }
 
     /**

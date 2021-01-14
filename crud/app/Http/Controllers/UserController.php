@@ -16,6 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
+        $users = User::all();
         $intField = Internaute::orderBy('age','desc')->pluck('firstname','age');
         $chart2 = new UserChart;
         $chart2->labels($intField->values());
